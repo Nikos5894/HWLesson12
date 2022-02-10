@@ -1,6 +1,9 @@
 package com.company.cursor;
 
-import java.io.*;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class Main {
 
@@ -16,7 +19,7 @@ public class Main {
             oldFile = "from.txt";
             newFile = "to.txt";
         }
-        
+
         try(FileReader fr = new FileReader(oldFile);
             FileWriter fw = new FileWriter(newFile)){
 
